@@ -1,0 +1,55 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    display: inline-grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+header {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    border: 2px solid red;
+}
+
+aside {
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: lightblue;
+    border: 1px solid blue;
+}
+
+main {
+    display: inline-grid;
+    grid-template-rows: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    border: 2px solid green;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.cards {
+
+    grid-row-start: 1;
+    display: inline-grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-end: 4;
+    border: 2px solid lime;
+}
+
+
+.messages {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: 2px solid darkgreen;
+}
