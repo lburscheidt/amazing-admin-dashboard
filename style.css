@@ -99,6 +99,8 @@ main {
 
     grid-row-start: 1;
     display: inline-grid;
+    grid-template-rows: repeat(3, 100% / 3);
+    grid-template-columns: 50% 50%;
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -106,11 +108,21 @@ main {
     border: 2px solid lime;
 }
 
+.cards>div {
+    border: 2px solid purple;
+}
 
 .messages {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1;
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
     border: 2px solid darkgreen;
+}
+
+.messages>div {
+    border: 2px solid yellow;
 }
