@@ -14,13 +14,39 @@ header {
 }
 
 aside {
-
+    display: inline-grid;
+    grid-template-rows: repeat(18, calc(100% / 18));
+    grid-template-columns: 100%;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 5;
     background-color: lightblue;
     border: 1px solid blue;
+}
+
+.logo {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 2px solid orange;
+}
+
+.nav {
+    display: inline-grid;
+    grid-template-rows: repeat(9, calc(100% /));
+    grid-row-start: 3;
+    grid-row-end: 12;
+    border: 2 px solid yellow;
+}
+
+.nav>div {
+    border: 2px solid white;
+}
+
+
+
+aside>div {
+    border: 2px solid blue;
 }
 
 main {
