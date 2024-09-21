@@ -1,122 +1,128 @@
 body {
-  width: 100vw;
-  height: 100vh;
-  border: 1px solid black;
-  display: inline-grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 25% 25% 25% 25%;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    display: inline-grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
 }
 
 header {
-  display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 60% 40%;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  border: 2px solid red;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 60% 40%;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    border: 2px solid red;
 }
 
 .search {
-  grid-row-start: 1;
-  grid-column-start: 1;
-  border: 2px solid darkgreen;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    border: 2px solid darkgreen;
 }
 
 .userinfo-bottom {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-row-start: 2;
-  grid-column-start: 1;
-  border: 2px solid purple;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    border: 2px solid purple;
 }
 
 .userinfo-right {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-row-start: 1;
-  grid-column-start: 2;
-  border: 2px solid lime;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    border: 2px solid lime;
 }
 
-.userinfo-right > div {
-  border: 4px solid purple;
+.userinfo-right>div {
+    border: 4px solid purple;
 }
 
-.userinfo-bottom > div {
-  border: 3px solid yellow;
+.userinfo-bottom>div {
+    border: 3px solid yellow;
 }
 
 .buttons {
-  display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-row-start: 2;
-  grid-column-start: 2;
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-row-start: 2;
+    grid-column-start: 2;
 }
 
+
 aside {
-  display: inline-grid;
-  grid-template-rows: repeat(18, calc(100% / 18));
-  grid-template-columns: 100%;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 5;
-  background-color: lightblue;
-  border: 1px solid blue;
+    display: inline-grid;
+    grid-template-rows: repeat(18, calc(100% / 18));
+    grid-template-columns: 100%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: lightblue;
+    border: 1px solid blue;
 }
 
 .logo {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  border: 2px solid orange;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 2px solid orange;
 }
 
-.nav > div {
-  border: 2px solid white;
+
+
+.nav>div {
+    border: 2px solid white;
 }
 
-aside > div {
-  border: 2px solid blue;
+
+
+aside>div {
+    border: 2px solid blue;
 }
 
 main {
-  display: inline-grid;
-  grid-template-rows: calc(100% / 3) calc(100% / 3) calc(100% / 3);
-  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
-  border: 2px solid green;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-row-start: 2;
-  grid-row-end: 5;
+    display: inline-grid;
+    grid-template-rows: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    border: 2px solid green;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
 }
 
 .cards {
-  grid-row-start: 1;
-  display: inline-grid;
-  grid-template-rows: repeat(3, 100% / 3);
-  grid-template-columns: 50% 50%;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-end: 4;
-  border: 2px solid lime;
+
+    grid-row-start: 1;
+    display: inline-grid;
+    grid-template-rows: repeat(3, 100% / 3);
+    grid-template-columns: 50% 50%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-end: 4;
+    border: 2px solid lime;
 }
 
-.cards > div {
-  border: 2px solid purple;
+.cards>div {
+    border: 2px solid purple;
 }
 
 .messages {
-  display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 1;
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 4;
-  border: 2px solid darkgreen;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: 2px solid darkgreen;
 }
 
-.messages > div {
-  border: 2px solid yellow;
+.messages>div {
+    border: 2px solid yellow;
 }
