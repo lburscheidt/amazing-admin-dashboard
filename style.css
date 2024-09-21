@@ -108,6 +108,8 @@ header {
   grid-template-columns: repeat(3, calc(100% / 3));
   grid-row-start: 2;
   grid-column-start: 2;
+  gap: 20px;
+  align-items: end;
 }
 
 aside {
@@ -217,4 +219,14 @@ main {
 .card {
   display: grid;
   border-radius: 10px;
+}
+
+button {
+  background-color: var(--lochmara);
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-weight: 700;
 }
